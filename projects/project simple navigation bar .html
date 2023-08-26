@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 10%;
+            background: gray;
+        }
+        .logo{
+            cursor: pointer;
+            color: white;
+            font-weight: 400;
+            order: 2;            
+        }
+        .nav-link{
+         list-style: none;   
+         display: flex;
+
+        }
+        .nav-link li a{
+            color: white;
+            text-decoration: none;
+            padding: 0 20px;
+
+        }
+        .nav-link li a:hover{
+            color: burlywood;
+            transition: 0.4s;
+        }
+        button{
+            padding: 9px 25px;
+            font-size: 15px;
+            border: none;
+            border-radius: 5px;
+            order: 3;
+            
+        }
+        button:hover{
+            background-color: gray;
+            color: white;
+            transition: 0.4s;
+
+        }
+        button:active{
+            background-color: white;
+            color: gray;
+            transition: 0.4s;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 class="logo">Ashwin kumar</h2>
+        <nav>
+            <ul class="nav-link">
+                <li><a href="#1">Home</a></li>
+                <li><a href="#2">Product</a></li>
+                <li><a href="#3">Contact</a></li>
+                <li><a href="#4">Jobs</a></li>
+                <li><a href="#5">Service</a></li>
+            </ul>
+        </nav>
+        <button>sighn</button>
+    </header>
+</body>
+</html>

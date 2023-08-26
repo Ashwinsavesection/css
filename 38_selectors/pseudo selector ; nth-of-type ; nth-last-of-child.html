@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth-of-type | nth-last-of-type</title>
+    <style>
+        p:nth-of-type(2n){
+            color: blue;
+        }
+        p:nth-last-of-type(2n){
+            color: red;
+        }
+        .l2 li:nth-of-type(2n){
+            color: red;
+        }
+        .l1 li:nth-of-type(3n){
+            color: red;
+        }
+        .l1 li:nth-last-of-type(odd){
+            color: red;
+        }
+        .l2 li:nth-last-of-type(even){
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul class="l1">
+        <li>list-1</li>
+        <li>list-2</li>
+        <li>list-3</li>
+        <li>list-4</li>
+        <li>list-5</li>
+    </ul>
+    <ul class="l2">
+        <li>list-1</li>
+        <li>list-2</li>
+        <li>list-3</li>
+        <li>list-4</li>
+        <li>list-5</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis obcaecati reiciendis saepe blanditiis nulla repudiandae unde accusantium doloremque dignissimos tenetur.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis obcaecati reiciendis saepe blanditiis nulla repudiandae unde accusantium doloremque dignissimos tenetur.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis obcaecati reiciendis saepe blanditiis nulla repudiandae unde accusantium doloremque dignissimos tenetur.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis obcaecati reiciendis saepe blanditiis nulla repudiandae unde accusantium doloremque dignissimos tenetur.</p>
+</body>
+</html>

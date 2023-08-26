@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form psesudo selector</title>
+    <style>
+        #name:focus{
+            outline: none;
+        }
+        input[type="checkbox"]:checked{
+            box-shadow: 0px 0px 3px 3px green;
+        }
+        #t1{
+            margin-left: 11px;
+        }
+        
+        input[type="text"]:disabled{
+            background: red;
+        }
+        input[type="text"]:enabled{
+            background-color: plum;
+        }
+        input[type="text"]:required{
+            background-color: green;
+        }
+        input[type="email"]:read-write{
+            background-color: blue;
+
+        }
+        #vd[type='text']:valid{
+            background-color:rgb(72, 175, 72);
+        }
+        #vd[type="text"]:invalid{
+            background-color: rgb(255, 0, 0);
+        }
+        input[type="radio"]:default{
+            box-shadow: 0px 0px 3px 3px royalblue;
+
+        }
+        option:default{
+            
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <label>:focus</label>
+    <input type="text" id="name">
+    <hr>
+    <input type="checkbox" id="football">
+    <label for="football">football</label>
+    <input type="checkbox" id="baseball">
+    <label for="baseball">baseball</label>
+    <input type="checkbox" id="volleyball">
+    <label for="volleyball">volleyball</label>
+    <hr>
+    <label for="">:enable</label>
+    <input type="text" id="t1" > <!--default : enabled-->
+    <br>
+    <label for="">:disabled</label>
+    <input type="text" id="t2" disabled>
+    <br>
+    <label for="">:requried</label>
+    <input type="text" id="t3" required>
+    <br>
+    <hr>
+    <label for="">:read-only</label>
+    <input type="email" id="t4" readonly>
+    <br>
+    <label for="">:read-write</label>
+    <input type="email" id="t5"><!--default : read-write-->
+    <hr>
+    <label for="">:valid | :invaild</label><br>
+    <input id="vd" type="text" placeholder="Enter Username" pattern="[a-z]*">
+<hr>
+    <label for="">:default</label>
+    <input type="radio" name="gender" id="male" checked>
+    <label for="male">male</label>
+    <input type="radio" name="gender" id="female" >
+    <label for="female">female</label>
+    <select name="" id="">
+        <option value="">select</option>
+        <option value="C">C</option>
+        <option value="C">C++</option>
+        <option value="C">Java</option>
+        <option value="C" selected>Python</option>
+    </select>
+</body>
+</html>

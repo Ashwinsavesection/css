@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>style preference</title>
+        <style>
+            /*id element rules will be not change */
+            #box p{
+                color: red;
+            }
+            .class p{
+                color: aqua ;
+            }
+            p{
+                color: orange  !important;/*this keyword using breaking id and class elements*/
+            }
+        </style>
+    </head>
+    <body>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias nostrum itaque odit id nihil consequuntur culpa nobis officiis voluptates nulla.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias nostrum itaque odit id nihil consequuntur culpa nobis officiis voluptates nulla.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias nostrum itaque odit id nihil consequuntur culpa nobis officiis voluptates nulla.</p>
+        <div id="box">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias nostrum itaque odit id nihil consequuntur culpa nobis officiis voluptates nulla.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias nostrum itaque odit id nihil consequuntur culpa nobis officiis voluptates nulla.</p>
+            <p class="class">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias nostrum itaque odit id nihil consequuntur culpa nobis officiis voluptates nulla.</p>
+      
+        </div>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>;is</title>
+    <style>
+        #d1 h2,
+        #d1 h3,
+        #d1 h4{
+            color: red;
+        }
+        #d1 :is(h2,h3,h4){
+            color: blue;
+        }
+        :is(#d1,#d2) h2{
+            color: rgb(255, 213, 0);
+        }
+        :is(#d1,#d2) :is(h4,h3){
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">
+        <h2>h2 -   heading one</h2>
+        <h3>h3 - sub heading</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam rem quo harum nam dolorum ex hic sunt enim, maiores beatae.</p>
+        <h4>h4 - sub heading 2</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam rem quo harum nam dolorum ex hic sunt enim, maiores beatae.</p>
+    </div>
+    <hr>
+    <div id="d2">
+        <h2>h2 - sub heading</h2>
+        <h3>h4 - subheading</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam rem quo harum nam dolorum ex hic sunt enim, maiores beatae.</p>
+
+    </div>
+    <p><b>outside</b>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat debitis error alias natus beatae neque omnis magni quia voluptatum ratione!</p>
+</body>
+</html>

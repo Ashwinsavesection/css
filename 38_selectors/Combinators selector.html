@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Combinators selector</title>
+    <style>
+    /*
+     Combinators selector :
+   
+    1. Descendant
+    2. Direct child
+    3. Adjustement Sibling
+    4. General Sibling
+    */
+
+   
+        .box p span{/*1. Descendant*/
+           color: blue;
+        }
+        .box > p{/*2. Direct child*/
+           color: red;
+        }
+        .box + span{/*3. Adjustement Sibling*/
+           color: brown;
+        }
+        .box ~ p{/*4. General Sibling*/
+           color: chartreuse;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore ratione sunt nobis possimus minus quam reprehenderit assumenda autem at!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore ratione sunt nobis possimus minus quam reprehenderit assumenda autem at!</p>
+        <div id="innerbox">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo incidunt earum impedit tempore similique sapiente. Repellat suscipit tenetur non provident.</p>
+        </div>
+    </div>
+    <span>hi</span>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore ratione sunt nobis possimus minus quam reprehenderit assumenda autem at!</p>
+
+</body>
+</html>

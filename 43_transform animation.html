@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform animation</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            box-sizing: border-box;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: orangered;
+            border: 5px solid rgb(253, 125, 79);
+            border-top:5px solid yellow;
+            text-align: center;
+            line-height: 10px;
+        /*using for rotate property*/   
+         /* border-radius: 50%;*/ 
+        }
+        .box{
+            
+            
+
+
+            transition: 2s;
+        }
+        .box h1{
+            transform: skewY(60deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>A</h1>
+    </div>
+</body>
+</html>
+<!--
+        .box:hover{
+            transform: translateX(500px);
+            transform: translateY(-500px);
+            transform: translate(500px,130px);
+
+            transform: rotateX(360deg);
+            transform: rotatey(360deg);
+            transform: rotatez(-360deg);
+            transform: rotate(360deg);
+
+            transform: scaleX(2);
+            transform: scaleY(2); 
+            transform: scale(2,2); 
+
+            transform: skewX(90deg);
+            transform: skewY(90deg);
+            transform: skew(60deg,30deg);
+            transition: 1s;
+
+
+        
+        }
+-->
+
+<!--
+            .box{
+            animation: ashwin;
+            animation-duration: 10s;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes ashwin {
+            20%{
+                transform: translateX(100px) rotatez(360deg);
+            }
+            40%{
+                transform: translateY(100px) ;
+            }
+            60%{
+                transform: translateX(-100px) rotatez(360deg);
+            }
+            80%{
+                transform: translateY(-100px) ;
+            }
+            100%{
+                transform: translateY(20px) rotatez(360deg);
+            }
+        }
+-->

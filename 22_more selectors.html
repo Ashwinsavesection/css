@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>more selectors</title>
+        <style>
+            .box > p{
+                color: red;
+            }
+            div[class="inner"]{
+                background-color: aqua;
+            }
+            a[href$="g"]{
+                color: rgb(255, 213, 28);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <h1>box para</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quibusdam?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quibusdam?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quibusdam?</p>
+            <div class="inner">
+                <h1>box inner para</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quibusdam?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quibusdam?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quibusdam?</p>     
+            </div>                     
+        </div>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi accusantium itaque, dolores eligendi officia animi repudiandae quaerat consequatur exercitationem officiis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quibusdam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quibusdam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quibusdam?</p>
+        <a href="test_1.jpg" title="contact">contact</a>
+    </body>
+</html>
+<!--
+    > child selector
+    + nearesd selector
+    
+    [] :
+        class
+        id
+        class="name"
+        id="name"
+    
+    $ last word selector
+-->

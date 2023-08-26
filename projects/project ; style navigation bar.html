@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>style navigation bar</title>
+    <style>
+        body{
+            background-color: #2d3436;
+        }
+        nav{  
+            margin-top: 200px;
+            text-align: center;
+
+        }
+        nav ul {
+            display: inline-block;
+            list-style: none;
+            transform: skew(-25deg);
+        }
+        nav ul li{
+            background-color: #fff;
+            float: left;
+            border-right: 1px solid #eee;
+            box-shadow: 1.95px 1.95px 2.6px black;
+            color: #555;
+            font-weight: 400;
+
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            padding: 10px 10px;
+            transform: skew(25deg);
+        }
+        nav ul li:hover{
+            background-color: cadetblue;
+            color: white;
+            transition: background-color 0.3s ease-in-out ;
+        }
+        nav ul li:first-child{
+            border-radius: 5px 0px 0px 5px;
+        }
+        nav ul li:last-child{
+            border-radius: 0px 5px 5px 0px;
+        }
+    </style>
+</head> 
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>display table properties</title>
+        <style>
+            .table{
+                display: table;
+                width: 600px;
+                
+                margin-top: 100px;
+                margin-left: 100px;
+            }
+            .row{
+
+                display: table-row;
+                text-transform: capitalize;
+
+            }
+            .col{
+                border:1px solid rgb(218, 96, 15);
+                padding: 10px 30px;
+                display: table-cell;
+            }
+            .header{
+                font-weight: bold;
+                text-align: center;
+                color: white;
+                background-color: rgb(218, 96, 15);
+
+                display: table-header-group;
+            }
+            .footer{
+                background-color: rgb(218, 96, 15);
+                color: white;
+                font-weight: bold;
+                display: table-footer-group;
+            }
+            .cap{
+                display: table-caption;
+                text-align: center;
+                font-family: impact ;
+                padding: 10px;
+                font-size: 20px;
+            }
+            .col-group{
+                display: table-column-group;
+            }
+            .tblcol{
+                display: table-column;
+            }
+            .col2{
+                width: 40px;
+                background: rgb(204, 61, 14);
+            }
+            .row-group{
+                display: table-row-group;
+
+                background-color: olive;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="table">
+            <div class="cap">PROJECT 1 </div>
+            <div class="col-group">
+                <div class="tblcol">col-1</div>
+                <div class="tblcol">col-2</div>
+                <div class="tblcol col2">col-3</div>
+            </div>
+            <div class="header"> 
+                <div class="row">
+                    <div class="col">Name</div>
+                    <div class="col">Age</div>
+                    <div class="col">City</div>
+                </div>
+            </div>
+            <div class="row-group">
+                <div class="row">
+                    <div class="col">ashiwn</div>
+                    <div class="col">15</div>
+                    <div class="col">coimatore</div>
+                </div>
+                <div class="row">
+                    <div class="col">ashiwn</div>
+                    <div class="col">15</div>
+                    <div class="col">coimatore</div>
+                </div>
+                <div class="row">
+                    <div class="col">ashiwn</div>
+                    <div class="col">15</div>
+                    <div class="col">coimatore</div>
+                </div>
+                <div class="row">
+                    <div class="col">ashiwn</div>
+                    <div class="col">15</div>
+                    <div class="col">coimatore</div>
+                </div>
+                <div class="row">
+                    <div class="col">ashiwn</div>
+                    <div class="col">15</div>
+                    <div class="col">coimatore</div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="row">
+                    <div class="col">Total</div>
+                    <div class="col"></div>
+                    <div class="col">5</div>
+                </div>
+            </div>
+        </div>
+        </body>
+</html>
+<!--
+    table diplay properites
+
+    table
+    table-row
+    table-cell
+    table-header-group
+    table-footer-group
+    table-caption
+    table-row groub
+    table-colomn-group
+    table-colomn
+-->

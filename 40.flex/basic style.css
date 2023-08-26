@@ -1,0 +1,17 @@
+.container{
+             
+    height: 75px;
+    border: 2px solid black;
+    padding: 5px;
+    background-color: aliceblue;
+   }
+   .box{
+  
+       width: 50px;
+       background-color: orangered;
+       margin: 5px;
+       text-align: center;
+       line-height: 65px;
+       font-weight: bold;
+       color: white;
+    }

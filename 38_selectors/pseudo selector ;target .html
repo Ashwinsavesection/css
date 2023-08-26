@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:target</title>
+    <style>
+        p{
+            padding: 10px;
+            background-color: aliceblue;
+        }
+        p:target{
+            background-color: aqua;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <a href=".para-1">para-1</a>
+    <a href=".para-2">para-2</a>
+    <a href="#para-3">para-3</a>
+    <p class="para-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quidem doloribus aut fuga at sapiente sint, iure voluptas facere voluptatibus.</p>
+    <p class="para-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quidem doloribus aut fuga at sapiente sint, iure voluptas facere voluptatibus.</p>
+    <p id="para-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quidem doloribus aut fuga at sapiente sint, iure voluptas facere voluptatibus.</p>
+</body>
+</html>

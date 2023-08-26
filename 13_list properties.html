@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>list properties</title>
+        <style>
+            ul li{
+                text-transform: capitalize;
+                list-style-type: square;
+                list-style-type: circle;
+                list-style-type: decimal;
+                list-style-type: disc;
+                list-style-type: lower-roman;
+                list-style-type: upper-roman;
+                list-style-type: lower-alpha;
+                list-style-type: upper-alpha;
+                list-style-type: lower-latin;
+                list-style-type: lower-greek;
+                list-style-type: disc;
+                
+            }
+            
+            #hi li{
+                list-style-position: outside;/*default*/
+                list-style-position: inside ;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>home</li>
+            <li>product</li>
+            <li>contact</li>
+            <li>download</li>
+            <li>blog</li>
+        </ul>
+        <ul id="hi">
+            <li>home</li>
+            <li>product</li>
+            <li>contact</li>
+            <li>download</li>
+            <li>blog</li>
+        </ul>
+    </body>
+</html>
+<!--
+list-style-type:
+        square
+        circle
+        decimal
+        disc
+        lower-roman
+        upper-roman
+        lower-alpha
+        upper-alpha
+        lower-latin
+        lower-greek
+
+list-style-image:
+    url(*.png)
+
+list-style-position:
+        inside
+        outside
+-->

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rotaing color balls</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            min-height: 100vh;
+            display: grid;
+            place-items:center ;
+
+        }
+        .container{
+
+            width: 300px;
+            height: 300px;
+            position: relative;
+        }
+        .container > div{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+            animation: rot 5s calc(var(--i)*0.15s) linear infinite ;
+
+        }
+        @keyframes rot {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(720deg);
+            }
+        }
+        .ball{
+            position: absolute;
+            background-color: red;
+            height: 2px;
+            width: 2px;
+            border-radius: 50%;
+            animation: resize 2s linear infinite ;
+            animation-delay: calc(var(--i)*0.15s);
+        }
+        @keyframes resize {
+            
+            0%{
+                filter: hue-rotate(0deg);
+            }
+            90%{
+                transform: scale(50);
+                filter: hue-rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="--i:1"><div class="ball"></div></div>
+        <div style="--i:2"><div class="ball"></div></div>
+        <div style="--i:3"><div class="ball"></div></div>
+        <div style="--i:4"><div class="ball"></div></div>
+        <div style="--i:5"><div class="ball"></div></div>
+        <div style="--i:6"><div class="ball"></div></div>
+        <div style="--i:7"><div class="ball"></div></div>
+        <div style="--i:8"><div class="ball"></div></div>
+        <div style="--i:9"><div class="ball"></div></div>
+        <div style="--i:10"><div class="ball"></div></div>
+    </div>
+</body>
+</html>

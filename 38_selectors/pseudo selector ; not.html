@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:not</title>
+    <style>
+        div.para{
+            color: red;
+        }
+        div:not(.para){
+            color: rgb(0, 255, 55);
+        }
+    </style>
+</head>
+<body>
+    <div class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut numquam accusantium aspernatur unde reiciendis quasi consequatur inventore. Qui, ipsum accusantium!</div>
+    <div><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut numquam accusantium aspernatur unde reiciendis quasi consequatur inventore. Qui, ipsum accusantium!</p></div>
+    <div class="para"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut numquam accusantium aspernatur unde reiciendis quasi consequatur inventore. Qui, ipsum accusantium!</p></div>
+</body>
+</html>
